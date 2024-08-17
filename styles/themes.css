@@ -4,3 +4,39 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+    --main-ff: 'Inter';
+    --accent-ff: 'PressStart2P';
+    --text-fw: 400;
+    --title-fw: 785;
+    --bg-color: #000;
+    --text-color: #00CC14;
+    --accent-color: #00CC14;
+    --stroke-color : #000;
+    --button-color : #00CC14;
+    --heart-contour-color: #00CC14;
+    --heart-fill-color: #00CC14;
+    --floppy-fill-color: #00CC14;
+    --bg-gradient: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #007f0c, #004306);
+}
+
+:root.theme-light {
+    --main-ff: 'Inter';
+    --accent-ff: 'PressStart2P';
+    --text-fw: 400;
+    --title-fw: 700;
+    --bg-color: #fff;
+    --text-color: #000;
+    --accent-color: #000;
+    --stroke-color : #fff;
+    --button-color : #fff;
+    --heart-contour-color: #000;
+    --heart-fill-color: #000;
+    --floppy-fill-color: #fff;
+    --bg-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+}
