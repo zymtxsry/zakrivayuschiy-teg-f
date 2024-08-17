@@ -30,7 +30,7 @@
 
 /* header  */
 
-header {
+.header {
   font-family: var(--accent-ff);
   text-transform: uppercase;
   border: 2px solid var(--accent-color);
@@ -42,14 +42,15 @@ header {
   margin: 100px 0 102px 0;
 }
 
-header h1 {
+.header__heading {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin-block-end: 20px;
 }
 
-header p {
+.header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   margin-block-end: 25px;
+  font-weight: var(--text-fw);
 }
 
 header button {
@@ -103,11 +104,6 @@ header button:focus,
 header button:focus-visible {
   outline: none;
   opacity: 0.6;
-}
-
-header button:focus::after,
-header button:focus-visible::after {
-  width: 100%;
 }
 
 /* section  */
@@ -166,31 +162,31 @@ section:last-of-type {
   object-fit: cover;
 }
 
-.image-2 {
+.image__clean-sheet {
   filter: blur(2px);
 }
 
-.image-3 {
+.image__will-work {
   filter: brightness(50%);
 }
 
-.image-4 {
+.image__ideal {
   filter: contrast(52%);
 }
 
-.image-5 {
+.image__about {
   filter: grayscale(100%);
 }
 
-.image-6 {
+.image__strategy {
   filter: hue-rotate(200deg);
 }
 
-.image-7 {
+.image__give-up {
   filter: saturate(200%);
 }
 
-.image-8 {
+.image__now-here {
   filter: sepia(50%);
 }
 
@@ -213,12 +209,13 @@ section:last-of-type {
   align-items: center;
   margin: 2px 25px 25px 0;
   position: relative;
+  gap: 1px;
 }
 
 section .card__icon-button {
-  border: none;
+  border: 2px solid transparent;
   background-color: transparent;
-  block-size: 36px;
+  block-size: 38px;
   display: flex;
   align-items:end;
 }
@@ -245,7 +242,13 @@ section .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
+}
+
+.card__like-button {
+  block-size: 38px;
+  inline-size: 130px
 }
 
 .button__text {
@@ -358,23 +361,18 @@ footer .button {
   padding: 15px 20px;
 }
 
-
-#icon path{
-  fill: var(--floppy-fill-color);
-}
-
-
 /* dialog  */
 
-#dialog {
+.dialog {
   background-color: var(--bg-color);
   max-width: 357px;
+  max-height: 195px;
   border: 2px solid var(--accent-color);
   padding: 30px;
   block-size: 193px;
 }
 
-#dialog svg{
+.dialog svg{
   width: 39px;
   height: 39px;
   mix-blend-mode: difference;
@@ -382,24 +380,21 @@ footer .button {
 }
 
 
-.dialog__form > span {
+.dialog__form > p {
   font-family: var(--accent-ff);
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  mix-blend-mode: difference;
 }
 
-#dialog::backdrop {
+.dialog::backdrop {
   background-color: #000;
   opacity: 0.5;
 }
 
-#dialog button {
+.dialog button {
   margin: auto;
   width: 100%;
   justify-content: center;
-}
-
-#dialog button span {
-  text-align: center;
 }
 
 .dialog__form {
@@ -407,6 +402,8 @@ footer .button {
   grid-template-columns: 0.05fr 1fr;
   grid-template-rows: 1fr fit-content;
   gap: 30px 20px;
+  background-color: var(--bg-color);
+  color: var(--accent-color)
 }
 
 .dialog__form button {
@@ -414,7 +411,7 @@ footer .button {
   grid-column: 1 / 3;
 }
 
-#dialog:not([open]) {
+.dialog:not([open]) {
   pointer-events: none;
   opacity: 0;
 } 

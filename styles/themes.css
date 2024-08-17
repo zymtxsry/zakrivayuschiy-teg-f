@@ -6,8 +6,8 @@
 */
 
 :root.theme-dark {
-    --main-ff: 'Inter';
-    --accent-ff: 'PressStart2P';
+    --main-ff: 'Inter' , sans-serif;
+    --accent-ff: 'PressStart2P', sans-serif;
     --text-fw: 400;
     --title-fw: 785;
     --bg-color: #000;
@@ -24,8 +24,8 @@
 }
 
 :root.theme-light {
-    --main-ff: 'Inter';
-    --accent-ff: 'PressStart2P';
+    --main-ff: 'Inter', sans-serif;
+    --accent-ff: 'PressStart2P', sans-serif;
     --text-fw: 400;
     --title-fw: 700;
     --bg-color: #fff;

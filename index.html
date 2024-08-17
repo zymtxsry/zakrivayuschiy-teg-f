@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__heading">&lt;/HTML&gt;</h1>
-      <p class="header__subtitle">закрывающий тег</p>
+      <a class="header__heading">&lt;/HTML&gt;</a>
+      <h1 class="header__subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -48,11 +48,11 @@
     </header>
     <main>
       <section class="container">
-        <h1 class="container__heading">
+        <h2 class="container__heading">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h1>
+        </h2>
         <div class="container__image">
-          <img src="./images/image.png" alt="the motorhome is standing" />
+          <img src="./images/image.png" alt="Дом на колёсах стоит" />
           <p class="image__watermark">&lt;/HTML&gt;</p>
         </div>
         <div class="contaner__text">
@@ -66,7 +66,9 @@
           </p>
         </div>
         <div class="container__button">
-          <button class="card__icon-button">
+          <button class="card__icon-button" 
+          type="button"
+          aria-label="Поставить лайк">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -104,9 +106,9 @@
         </div>
       </section>
       <section class="container">
-        <h1 class="container__heading">1 спринт: Я — чистый лист</h1>
+        <h2 class="container__heading">1 спринт: Я — чистый лист</h2>
         <div class="container__image">
-          <img class="image-2" src="./images/photo-1542831371-29b0f74f9713.avif" alt="the motorhome is standing" />
+          <img class="image__clean-sheet" src="./images/photo-1542831371-29b0f74f9713.avif" alt="На картинке код программы" />
           <p class="image__watermark">&lt;/HTML&gt;</p>
         </div>
         <div class="contaner__text">
@@ -162,7 +164,7 @@
       <section class="container">
         <h1 class="container__heading">1 спринт: А если не получится?</h1>
         <div class="container__image">
-          <img class="image-3" src="./images/photo-1515879218367-8466d910aaa4.avif" alt="the motorhome is standing" />
+          <img class="image__will-work" src="./images/photo-1515879218367-8466d910aaa4.avif" alt="На картинке код программы" />
           <p class="image__watermark">&lt;CSS&gt;</p>
         </div>
         <div class="contaner__text">
@@ -216,7 +218,7 @@
       <section class="container">
         <h1 class="container__heading">2 спринт: Погоня за идеалом</h1>
         <div class="container__image">
-          <img class="image-4" src="./images/photo-1607799279861-4dd421887fb3.avif" alt="the motorhome is standing" />
+          <img class="image__ideal" src="./images/photo-1607799279861-4dd421887fb3.avif" alt="Экран на котором написан код" />
           <p class="image__watermark">&lt;LUCK&gt;</p>
         </div>
         <div class="contaner__text">
@@ -272,7 +274,7 @@
       <section class="container">
         <h1 class="container__heading">2 спринт: О тех, кто рядом</h1>
         <div class="container__image">
-          <img class="image-5" src="./images/photo-1607798748738-b15c40d33d57.avif" alt="the motorhome is standing" />
+          <img class="image__about" src="./images/photo-1607798748738-b15c40d33d57.avif" alt="Человек сидит и программирует" />
           <p class="image__watermark">&lt;HELLO&gt;</p>
         </div>
         <div class="contaner__text">
@@ -329,7 +331,7 @@
       <section class="container">
         <h1 class="container__heading">3 спринт: Обходные стратегии</h1>
         <div class="container__image">
-          <img class="image-6" src="./images/js.avif" alt="the motorhome is standing" />
+          <img class="image__strategy" src="./images/js.avif" alt="На картинке код программы" />
           <p class="image__watermark">&lt;ADAPTIVE&gt;</p>
         </div>
         <div class="contaner__text">
@@ -383,7 +385,7 @@
       <section class="container">
         <h1 class="container__heading">3 спринт: Когда опускаются руки</h1>
         <div class="container__image">
-          <img class="image-7" src="./images/laptap.avif" alt="the motorhome is standing" />
+          <img class="image__give-up" src="./images/laptap.avif" alt="Экран на котором код программы" />
           <p class="image__watermark">&lt;LOFI&gt;</p>
         </div>
         <div class="contaner__text">
@@ -439,7 +441,7 @@
       <section class="container">
         <h1 class="container__heading">«Сейчас я здесь»</h1>
         <div class="container__image">
-          <img class="image-8" src="./images/photo-1530103043960-ef38714abb15.avif" alt="the motorhome is standing" />
+          <img class="image__now-here" src="./images/photo-1530103043960-ef38714abb15.avif" alt="Рука держит два цветочка на фоне других цветов" />
           <p class="image__watermark">&lt;SVG&gt;</p>
         </div>
         <div class="contaner__text">
@@ -502,17 +504,17 @@
         aria-controls="dialog"
       >
         <svg viewBox="0 0 21 21">
-            <use href="./svg/floppy.svg#icon">
+            <use href="./svg/floppy.svg#icon" />
           </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
-    <dialog id="dialog">
+    <dialog id="dialog" class="dialog">
       <form class="dialog__form" method="dialog">
         <svg viewBox="0 0 21 21">
-          <use href="./svg/floppy.svg#icon">
+          <use href="./svg/floppy.svg#icon" />
         </svg>
-        <span>Вставьте дискету, чтобы продолжить</span>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         <button class="button"><span class="button__text">Ок</span></button>
       </form>
     </dialog>

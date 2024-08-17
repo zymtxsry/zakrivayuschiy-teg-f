@@ -2,8 +2,8 @@
 
 :root {
     /* font family  */
-    --main-ff: "Inter";
-    --accent-ff: "PressStart2p";
+    --main-ff: "Inter", sans-serif;
+    --accent-ff: "PressStart2p", sans-serif;
 
     /* fonw weight  */
 
