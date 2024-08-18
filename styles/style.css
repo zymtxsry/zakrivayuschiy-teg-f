@@ -377,12 +377,13 @@ footer .button {
   height: 39px;
   mix-blend-mode: difference;
   align-self: center;
+  color: var(--button-color);
 }
 
 
 .dialog__form > p {
   font-family: var(--accent-ff);
-  /* color: var(--text-color); */
+  color: var(--button-color);
   mix-blend-mode: difference;
 }
 

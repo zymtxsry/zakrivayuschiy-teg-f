@@ -503,8 +503,11 @@
         onclick="window['dialog'].showModal()"
         aria-controls="dialog"
       >
-        <svg viewBox="0 0 21 21">
-            <use href="./svg/floppy.svg#icon" />
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 21 21" 
+        width="39" 
+        height="36">
+            <use href="./svg/floppy.svg#floppy" />
           </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -512,7 +515,7 @@
     <dialog id="dialog" class="dialog">
       <form class="dialog__form" method="dialog">
         <svg viewBox="0 0 21 21">
-          <use href="./svg/floppy.svg#icon" />
+          <use href="./svg/floppy.svg#floppy" />
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         <button class="button"><span class="button__text">Ок</span></button>
