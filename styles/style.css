@@ -53,7 +53,7 @@
   font-weight: var(--text-fw);
 }
 
-header button {
+.theme-menu__button {
   border: none;
   background-color: transparent;
   position: relative;
@@ -61,7 +61,7 @@ header button {
   text-transform: uppercase;
 }
 
-header li {
+.theme-menu__item {
   font-size: 14px;
   position: relative;
   margin-block-end: 12px;
@@ -344,20 +344,21 @@ section .card__icon-button:focus-visible {
   animation: animation-heart 0.3s ease-in 0.1s 1 alternate;
 }
 
-footer {
+/* footer  */
+
+.footer {
   margin: 50px 0;
 }
 
-footer svg{
+.footer__svg{
   width: 21px;
   height: 21px;
   mix-blend-mode: difference;
 }
 
-footer .button {
+.footer__button {
   gap: 8px;
   margin: auto;
-  align-items: center;
   padding: 15px 20px;
 }
 
