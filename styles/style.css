@@ -100,6 +100,10 @@ header button:hover {
   transition: 0.4s ease;
 }
 
+header button:focus::after {
+  width: 100%;
+}
+
 header button:focus,
 header button:focus-visible {
   outline: none;
@@ -347,7 +351,7 @@ section .card__icon-button:focus-visible {
 /* footer  */
 
 .footer {
-  margin: 50px 0;
+  margin: 50px 0 100px;
 }
 
 .footer__svg{
@@ -366,11 +370,12 @@ section .card__icon-button:focus-visible {
 
 .dialog {
   background-color: var(--bg-color);
-  max-width: 357px;
-  max-height: 195px;
+  /* max-width: 357px;
+  max-height: 195px; */
   border: 2px solid var(--accent-color);
   padding: 30px;
   block-size: 193px;
+  inline-size: 357px;
 }
 
 .dialog svg{
@@ -386,6 +391,9 @@ section .card__icon-button:focus-visible {
   font-family: var(--accent-ff);
   color: var(--button-color);
   mix-blend-mode: difference;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .dialog::backdrop {
@@ -403,7 +411,7 @@ section .card__icon-button:focus-visible {
   display: grid;
   grid-template-columns: 0.05fr 1fr;
   grid-template-rows: 1fr fit-content;
-  gap: 30px 20px;
+  gap: 28px 20px;
   background-color: var(--bg-color);
   color: var(--accent-color)
 }
@@ -433,8 +441,14 @@ section .card__icon-button:focus-visible {
     flex-direction: column;
   }
 
-  footer svg {
-    width: 27px;
-    height: 27px;
+  .footer__svg {
+    width: 28px;
+    height: 28px;
   }
+
+  .dialog {
+    padding: 32px 38px;
+    overflow: hidden;
+  }
+
 }
