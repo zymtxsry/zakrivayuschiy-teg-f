@@ -54,6 +54,7 @@
 }
 
 .theme-menu__button {
+  padding: 0;
   border: none;
   background-color: transparent;
   position: relative;
@@ -64,7 +65,7 @@
 .theme-menu__item {
   font-size: 14px;
   position: relative;
-  margin-block-end: 12px;
+  margin-block-end: 14px;
   margin-left: 17px;
 }
 
@@ -428,8 +429,8 @@ section .card__icon-button:focus-visible {
 
 @media (width <= 375px) {
 
-  header li {
-    margin-left: 19px;
+  .theme-menu__item {
+    margin-left: 20px;
   }
 
   .image__watermark {
